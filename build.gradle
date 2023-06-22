@@ -37,6 +37,14 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
+task appNpmInstall(type: NpmTask) {
+    dependsOn "npmSetup"
+    description = "Installs dependencies from package.json"
+    workingDir = file("${projectDir}/src/main/resources/static");
+    args = ["install"]
+}
+
+
 // React build 설정
 def reactAppDir = "$projectDir/src/main/reactjs"
 /*
@@ -86,3 +94,4 @@ task installReact(type: Exec) {
         commandLine "npm", "install"
     }
 }
+
