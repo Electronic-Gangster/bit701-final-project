@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 0.01ms linear;
   }
 }
 
@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes color-wave {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: purple;
+  }
+}
+
+.bb {
+  animation: wave 0.1s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+.bb2 {
+  animation: color-wave 0.1s ease-in-out infinite, wave 0.1s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+
