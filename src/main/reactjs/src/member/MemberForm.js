@@ -33,7 +33,7 @@ function MemeberForm(props) {
                             <td className='input-group'>
                                 <input type='text' className='form-control' placeholder='아이디' required value={myid} onChange={(e)=>setMyid(e.target.value)}/>
 
-                                <button type='button' className='btn btn-outline-danger btn-sm'>중복확인</button>
+                                <button type='button' className='btn btn-outline-danger btn-sm'></button>
                             </td>
                         </tr>
 
