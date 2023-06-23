@@ -7,7 +7,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import DaumPostcode from 'react-daum-postcode';
-import { Axios } from 'axios';
+import  Axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function MemeberForm(props) {
@@ -111,7 +111,7 @@ function MemeberForm(props) {
                         <tr>
                             <th style={{width:'100px',backgroundColor:"#b0e0e6"}}>비밀번호</th>
                             <td>
-                                <input type='text' className='form-control' placeholder='비번입력' required value={mypass} onChange={(e)=>setMypass(e.target.value)}/>
+                                <input type='password' className='form-control' placeholder='비번입력' required value={mypass} onChange={(e)=>setMypass(e.target.value)}/>
                             </td>
                         </tr>
 
