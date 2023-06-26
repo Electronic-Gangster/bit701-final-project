@@ -32,6 +32,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation group: 'io.awspring.cloud', name: 'spring-cloud-starter-aws', version: '2.4.4'
     implementation group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.12.488'
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
     //testImplementation 'org.springframework.security:spring-security-test'
 }
 
