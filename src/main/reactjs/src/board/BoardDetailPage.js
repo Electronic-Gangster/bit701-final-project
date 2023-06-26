@@ -23,7 +23,7 @@ function BoardDetailPage(props) {
     const loginok = sessionStorage.loginok;
     
     // 아이디 마스킹 처리
-    const maskedId = myid.substring(0, 3) + "*".repeat(myid.length - 3);
+    const maskedId = dto.myid?.slice(0, 3) + "*".repeat(3);
 
     useEffect(()=>{                                     //컴포넌트가 로드되면 실행
         selectData();                                   //글번호에 해당하는 데이터 가져오기
