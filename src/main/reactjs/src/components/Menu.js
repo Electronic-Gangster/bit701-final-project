@@ -16,7 +16,7 @@ function Menu(props) {
                 <NavLink to={"/member/list"}>회원목록</NavLink>
             </li>
             <li className=''>
-                <NavLink to={"/board/list"}>게시판</NavLink>
+                <NavLink to={"/board/list/1"}>게시판</NavLink>
             </li>
             <li>
                 {

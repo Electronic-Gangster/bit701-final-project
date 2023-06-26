@@ -14,7 +14,7 @@ import java.util.Vector;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/borad")
+@RequestMapping("/board")
 public class BoardController {
     @Autowired
     private NcpObjectStorageService storageService;
@@ -42,7 +42,7 @@ public class BoardController {
         return photo;
     }
 
-    @PostMapping("/inset")
+    @PostMapping("/insert")
     public void insert(@RequestBody BoardDto dto)
     {
         dto.setPhoto(photo);
