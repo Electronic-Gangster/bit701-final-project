@@ -20,9 +20,10 @@ function BoardList(props) {
         })
     }
 
-    // eslint-disable-next-line
+    
     useEffect(()=>{                 //컴포넌트가 로드되면 실행
         list();                     //목록 가져오기
+        // eslint-disable-next-line
     },[currentPage]);               //currentPage가 변경되면 실행
 
     //글쓰기 버튼 이벤트
